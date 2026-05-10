@@ -1,0 +1,80 @@
+.my-orders {
+    margin: 50px 0px;
+    padding: 0px 50px;
+}
+
+.my-orders .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.my-orders-order {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1.5fr;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: var(--text-primary);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.my-orders-order img {
+    width: 50px;
+}
+
+.my-orders-order span {
+    color: var(--primary-color);
+}
+
+.my-orders-order b {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.order-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.my-orders-order button {
+    border: none;
+    padding: 12px 0px;
+    border-radius: 4px;
+    background-color: var(--surface-color);
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: 0.3s;
+}
+
+.my-orders-order .cancel-btn {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.my-orders-order .cancel-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+}
+
+.my-orders-order button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+}
+
+@media (max-width: 900px) {
+    .my-orders-order {
+        grid-template-columns: 1fr 2fr 1fr;
+        row-gap: 5px;
+        font-size: 12px;
+    }
+
+    .my-orders-order button {
+        font-size: 10px;
+    }
+}

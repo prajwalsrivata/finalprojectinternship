@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongod": "^2.0.0",
+    "mongoose": "^9.4.1",
+    "nodemon": "^3.1.14",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
